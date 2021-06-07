@@ -32,7 +32,11 @@ public class PlayerMovement : MonoBehaviour
     public void Move()
     {
         float moveZ = Input.GetAxis("Vertical");
-        moveDirection = new Vector3(0, 0, moveZ);
+        //float movex = Input.GetAxis("Horizontal");
+        moveDirection =  new Vector3(0, 0, moveZ);
+       
+
+
 
         if (isgrounded && velocity.y < 0)
         {

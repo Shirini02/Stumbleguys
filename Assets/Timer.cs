@@ -33,5 +33,9 @@ public class Timer : MonoBehaviour
             textdisplay.GetComponent<Text>().text = "00:" + seconds;
         }
         takingAway = false;
+        if(seconds==0f)
+        {
+            Debug.Log("Game over");
+        }
     }
 }
